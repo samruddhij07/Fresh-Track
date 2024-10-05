@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshTrack - Food Expiry Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>FreshTrack</h1>
+        <nav>
+            <button id="dark-mode-toggle" aria-label="Toggle Dark Mode" type="button">Toggle Dark Mode</button>
+            <div class="dropdown">
+                <button class="dropbtn">Shopping List</button>
+                <div class="dropdown-content" id="shopping-list">
+                    <p id="shopping-list-items">No items added yet.</p>
+                    <ul id="shopping-list-ul"></ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Food Items</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Apples</h3>
+                    <p>Expires in: <span class="expiry">3 days</span></p>
+                    <button class="add-to-list" type="button" data-item-name="Apples">Add to Shopping List</button>
+                </div>
+                <div class="card">
+                    <h3>Bread</h3>
+                    <p>Expires in: <span class="expiry">5 days</span></p>
+                    <button class="add-to-list" type="button" data-item-name="Bread">Add to Shopping List</button>
+                </div>
+                <div class="card">
+                    <h3>Milk</h3>
+                    <p>Expires in: <span class="expiry">2 days</span></p>
+                    <button class="add-to-list" type="button" data-item-name="Milk">Add to Shopping List</button>
+                </div>
+                <div id="shopping-list-container">
+                    <p id="shopping-list-items"></p>
+                    <ul id="shopping-list-ul"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FreshTrack. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
